@@ -1,0 +1,28 @@
+.post-box .details button{
+    margin-top: 10px;
+    border-radius: var(--border-radius);
+    background-color: #546e7a;
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.post-box .details button:hover{
+    background-color: #36474f;
+}
+.post-box .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notice-message{
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 30px;
+    text-transform: capitalize;
+}

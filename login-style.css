@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #18191a;
+}
+
+:root {
+    --primary-color: #18191a;
+    --secondary-color: #242526;
+    --border-radius: 15px;
+    --text-color: #dedede;
+}
+
+.header {
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 100%;
+}
+
+.home h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin: 10px auto;
+}
+
+.home .sing-in,
+.home .sing-up {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 400px; /* التحكم في عرض الفورم */
+    min-height: 400px; /* التحكم في ارتفاع الفورم */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.home .sing-in form,
+.home .sing-up form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.home .sing-in form input,
+.home .sing-up form input {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    outline: none;
+}
+
+.home form input[type="button"],
+.home form input[type="submit"] {
+    width: 90%;
+    margin-top: 10px;
+    border-radius: var(--border-radius);
+    background-color: #546e7a;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.home form input[type="button"]:hover,
+.home form input[type="submit"]:hover {
+    background-color: #36474f;
+}
+
+.home form input::placeholder {
+    text-transform: capitalize;
+}
+
+.home p {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+.home .details {
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.home .details a {
+    color: #c4c4c4;
+    transition: 0.3s;
+}
+.home .details a:hover{
+    color: #546e7a;
+}
